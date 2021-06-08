@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 59
+  controlID: 82
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 60
+  controlID: 21
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -325,7 +325,8 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Bunn4\Au To Know Game
+  m_LastProjectPath: C:\Users\Bunn4\OneDrive\Documents\GitHub\atk-game\Au To Know
+    Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -387,7 +388,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -483,21 +484,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 543a0000
       m_LastClickedID: 14932
-      m_ExpandedIDs: 52fbffff
+      m_ExpandedIDs: 52fbffff543a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Plane
-        m_OriginalName: Plane
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 14892
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -543,9 +544,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.9174881, y: 9.734701, z: 1.847969}
+    m_Target: {x: -4.617744, y: -15.06391, z: 41.58235}
     speed: 2
-    m_Value: {x: -0.9174881, y: 9.734701, z: 1.847969}
+    m_Value: {x: -4.617744, y: -15.06391, z: 41.58235}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -592,9 +593,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.10509368, y: 0.88485706, z: -0.24233039, w: -0.38374433}
+    m_Target: {x: -0.19305022, y: 0.10047077, z: -0.019876165, w: -0.97583133}
     speed: 2
-    m_Value: {x: -0.10509366, y: 0.8848568, z: -0.24233033, w: -0.38374424}
+    m_Value: {x: -0.19304979, y: 0.100470535, z: -0.01987612, w: -0.9758291}
   m_Size:
     m_Target: 29.408203
     speed: 2
