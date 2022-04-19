@@ -20,6 +20,7 @@ public class PauseScript: MonoBehaviour
     {
         PlayerStats.SetActive(false);
         Menu.SetActive(false);
+        HelpMenu.SetActive(false);
         WinScreen.SetActive(false);
         LoseScreen.SetActive(false);
         DeathScreen.SetActive(false);

@@ -57,12 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\FollowCamera.cs" />
+    <Compile Include="Assets\Scripts\TimeBar.cs" />
+    <Compile Include="Assets\Scripts\TimeScript.cs" />
     <Compile Include="Assets\Scripts\RotateScript.cs" />
     <Compile Include="Assets\Scripts\Example.cs" />
     <Compile Include="Assets\Scripts\NPCScript.cs" />
     <Compile Include="Assets\Scripts\HealthScript.cs" />
     <Compile Include="Assets\Scripts\SwordScript.cs" />
     <Compile Include="Assets\Scripts\TestMove.cs" />
+    <Compile Include="Assets\Scripts\ScoreBar.cs" />
     <Compile Include="Assets\Scripts\HealthIndicatorScript.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
     <Compile Include="Assets\Scripts\SubEnemyScript.cs" />
@@ -81,9 +84,7 @@
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\BasicEnemyScript.cs" />
-    <Compile Include="Assets\Scripts\ScoreBar.cs" />
-    <Compile Include="Assets\Scripts\TimeBar.cs" />
-    <Compile Include="Assets\Scripts\TimeScript.cs" />
+    <Compile Include="Assets\Scripts\DontDestroyAudio.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
