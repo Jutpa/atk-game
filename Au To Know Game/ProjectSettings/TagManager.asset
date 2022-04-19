@@ -7,6 +7,10 @@ TagManager:
   - Hazard
   - Health
   - Stamina
+  - Enemy
+  - Weapon
+  - Instant Kill
+  - Nemney
   layers:
   - Default
   - TransparentFX
