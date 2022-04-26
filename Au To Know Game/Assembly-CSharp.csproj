@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\NPCScript.cs" />
     <Compile Include="Assets\Scripts\HealthScript.cs" />
     <Compile Include="Assets\Scripts\SwordScript.cs" />
+    <Compile Include="Assets\Scripts\DontDestroyAudio.cs" />
     <Compile Include="Assets\Scripts\TestMove.cs" />
     <Compile Include="Assets\Scripts\ScoreBar.cs" />
     <Compile Include="Assets\Scripts\HealthIndicatorScript.cs" />
@@ -84,7 +85,7 @@
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\BasicEnemyScript.cs" />
-    <Compile Include="Assets\Scripts\DontDestroyAudio.cs" />
+    <Compile Include="Assets\Scripts\StormScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
