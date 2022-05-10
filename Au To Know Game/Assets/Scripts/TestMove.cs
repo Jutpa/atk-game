@@ -30,6 +30,7 @@ public class TestMove : MonoBehaviour
     //public int playerScore = 0;
 
     public AudioClip levelUp;
+    public AudioClip damage;
     public AudioSource audioSource;
 
     public HealthBar healthBar;
@@ -115,6 +116,14 @@ public class TestMove : MonoBehaviour
             staminaregen.Stop();
         }
 
+        // Keeps stamina locked at player max
+        if (playerStamina > playerMaxStamina)
+        {
+            playerStamina = playerMaxStamina;
+            staminaScript.SetStamina((int)playerStamina, (int)playerMaxStamina);
+            staminaBar.SetMaxStamina(playerMaxStamina);
+        }    
+
         // Sprinting, costs twice as much stamina as regeneration
         if (Input.GetKey("left shift") && playerStamina > 0.0f && Input.GetAxis("Vertical") != 0.0f)
         {
@@ -139,10 +148,16 @@ public class TestMove : MonoBehaviour
             staminaLoss(10.0f);
         }*/
 
-        // If player's health is significantly greater than player's maximum health, do the health decay
-        if (playerHealth > playerMaxHealth*1.5f)
+        // If player's health is significantly greater than player's maximum health, do the health decay - Health decay removed, replaced with health being locked at 150% player max health
+        /*if (playerHealth > playerMaxHealth*1.5f)
         {
             takeDamage(0.03f);
+        }*/
+        if (playerHealth > playerMaxHealth*1.5f)
+        {
+            playerHealth = playerMaxHealth * 1.5f;
+            healthScript.SetHealth((int)playerHealth, (int)playerMaxHealth);
+            healthBar.SetMaxHealth(playerMaxHealth);
         }
 
         // Levelling system: for every 10 kills your maximum HP permanently increases by 10 and your maximum Stamina permanently increases by 5
@@ -151,6 +166,8 @@ public class TestMove : MonoBehaviour
             Debug.Log("Level up!");
             playerLevel = scoreScript.ScoreNotification();
             playerMaxHealth = playerHealthInit + playerLevel * 10.0f;
+            takeDamage(-10.0f);
+            staminaLoss(-10.0f);
             playerMaxStamina = playerStaminaInit + playerLevel * 5.0f;
             Instantiate(particle, transform.position, transform.rotation);
             audioSource.PlayOneShot(levelUp, 0.75f);
@@ -184,6 +201,7 @@ public class TestMove : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             takeDamage(1.0f + (scoreScript.trueScore / 100000));
+            audioSource.Play();
         }
     }
 
@@ -191,8 +209,8 @@ public class TestMove : MonoBehaviour
     {
         if (other.CompareTag("Health"))
         {
-            takeDamage(-20.0f);
-            staminaLoss(-20.0f);
+            takeDamage(-40.0f);
+            staminaLoss(-50.0f);
 
             if (playerStamina > playerMaxStamina)
             {

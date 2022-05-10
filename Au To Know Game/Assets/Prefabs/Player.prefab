@@ -67,6 +67,7 @@ MonoBehaviour:
   offset: {x: 0, y: 3.5, z: -7.5}
   healthRegenerating: 0
   levelUp: {fileID: 8300000, guid: c28e912f6410f1a499c8ca4e7efc0f05, type: 3}
+  damage: {fileID: 8300000, guid: 7c101f7351798864db8db555f4f2d5b6, type: 3}
   audioSource: {fileID: 8662652276500053336}
   healthBar: {fileID: 0}
   staminaBar: {fileID: 0}
@@ -113,7 +114,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7c101f7351798864db8db555f4f2d5b6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

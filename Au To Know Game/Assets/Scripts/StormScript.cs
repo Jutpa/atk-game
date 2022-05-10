@@ -16,6 +16,5 @@ public class StormScript : MonoBehaviour
     void Update()
     {
         transform.position = player.transform.position;
-        transform.Rotate(0, 0.1f, 0);
     }
 }

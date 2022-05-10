@@ -138,11 +138,11 @@ public class BasicEnemyScript : MonoBehaviour
             {
                 // Sets a local variable for the loot table
                 float ranint = Random.value;
-                ranint *= 10;
+                ranint *= 20;
                 Debug.Log(ranint.ToString());
 
                 // Code for spawning loot, happens 1/10th of the time
-                if (ranint >= 9)
+                if (ranint > 19)
                 {
                     Debug.Log("spawned");
                     potiondrop = Instantiate(hpot, enemypos.position, new Quaternion(0.0f, 0.0f, 0.0f, 1.0f));
