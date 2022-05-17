@@ -3,24 +3,52 @@
     <title>Chicken Defender</title>
     <style>
       body {
-        background-color:gray;
+        background-color: lightgray;
+      }
+      div {
+        background-color: gray;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+      }
+      img {
+        display: block;
       }
     </style>
   </head>
   <body>
-    <h1>Chicken Defender</h1>
-    <h2>Synopsis</h2>
-    <p>A lone chicken must defend their village of... other chickens from the zombie horde during a harsh winter storm.</p>
-    <h2>Controls</h2>
-    <p>WASD to move, Space to jump. W and S will move your character, while A and D will rotate them, similarly to tank controls, but it's on a chicken. Rotation does not count as movement.</p>
-    <p>Holding down shift will consume stamina and boost your speed.</p>
-    <p>The only method of fighting back against the zombies is to use your spiked shield.</p>
-    <p>Over time, you will find yourself with a higher max health and stamina. This is because you are in fact leveling up.</p>
-    <p>Stamina is used to regenerate health when not moving, at a ratio of 2:1. When not being used and when not moving, your stamina will regenerate up to 100 units.</p>
-    <p>Zombies will occasionally drop potions that can be used to regain some health and stamina. Stamina can't go beyond the maximum at your level, but health can go up to 150% before rapidly decaying.</p>
-    <p>Defeat 100 zombies or wait out the storm to win.</p>
-    <p>But be warned, for each time you level up, the zombies will follow suit.</p>
-    <h2>Play the game!</h2>
-    <div></div>
+    <div>
+      <img style="margin-left: auto; margin-right: auto;" width="500" src="Au To Know Game\Assets\UI\TitleScreen1.png" alt="The title screen of the game, depicting the silhouette of a chicken running away from a zombie, along with some feathers. The title of the game, 'Chicken Defender', is written in gold or brass on a wooden plank background.">
+    </div>
+    <div>
+      <h2>Story</h2>
+      <p>A lone chicken must defend their village of... other chickens from the zombie horde during a harsh winter storm. With only their trusty spiked shield, can our hero defend their fellow feathered friends over the course of this stormy day?</p>
+    </div>
+    <div>
+      <img style="float: left;" width="200" src="ATKImages\Screen1.png" alt="An image of gameplay. The main character is walking through the village.">
+      <img style="float: left; margin-left: 25%; margin-right: 25%;" width="200" src="ATKImages\Screen2.png" alt="An image of gameplay. The main character is encountering a zombie.">
+      <img style="float: right; top: -200px;" width="200" src="ATKImages\Screen3.png" alt="An image of gameplay. The main character is fighting four zombies and is near a healing potion.">
+    </div>
+    <div>
+      <img style="margin-left: auto; margin-right: auto;" width="200" src="Au To Know Game\Assets\UI\PlayButton.png" alt="A wooden plank with 'PLAY' written on it in brass lettering, indicating that this is the part where you play the game.">
+      <p>insert game here</p>
+    </div>
+    <div>
+      <img style="margin-left: auto: margin-right: auto;" width="200" src="Au To Know Game\Assets\UI\HelpButton.png" alt="A wooden plank with 'HELP' written on it in brass lettering, indicating that this is the part where you learn the controls - i.e.: get help.">
+      WASD to move - W and S move character forwards and backwards, A and D rotate character.<br>
+      Your only weapon is a spiked shield. Fortunately, it works quite well. Running into zombies will kill them most of the time. If it doesn't work the first time, try retreating for a bit.<br>
+      The score is a little misleading - you get 100 points per killed zombie. Every 10 kills you level up, restoring some health and stamina and gaining extra maximum health and stamina.<br>
+      Make sure to keep an eye on the top-left of your UI to check on your health and stamina, although there is an obvious visual indicator when you get below 50% health and 50% stamina.<br>
+      You can restore a lot of health and stamina through using the potions that occasionally drop from zombies. On average, the percentage drop chance is 5%.<br> 
+      You can use stamina to jump, sprint, or regenerate health. Depending on the action taken, a different amount of stamina is used up - stamina uses up the most, followed by regeneration, followed by jumping.<br>
+      In order to win the game, you will either have to kill 100 zombies or wait out the day-long storm. Both winning conditions are tracked in the top-right corner of your UI - make sure to check them out!<br>
+      It's a lot easier to win the game by defending the chickens during the time limit, but it is very much possible to beat the game eariler by killing all the zombies. Try challenging yourself to see how fast you can do it!<br>
+      Do note that every time you level up, the zombies grow stronger as well.
+      <p>Good luck!</p>
+    </div>
+    <div>
+      <h2>Credits</h2>
+      <p>insert credits here</p>
+    </div>
   </body>
 </html>
